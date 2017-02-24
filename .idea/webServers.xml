@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="27a4635b-721e-499d-b1ac-6ee7c78c3197" name="joomla_virgin" url="http://joomla.dev">
+        <fileTransfer port="0" mountedRoot="C:\laragon\www\joomla" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
