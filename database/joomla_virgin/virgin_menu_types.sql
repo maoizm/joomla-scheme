@@ -11,10 +11,11 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping data for table joomla_virgin.virgin_menu_types: ~1 rows (approximately)
+-- Dumping data for table joomla_virgin.virgin_menu_types: ~2 rows (approximately)
 /*!40000 ALTER TABLE `virgin_menu_types` DISABLE KEYS */;
 INSERT INTO `virgin_menu_types` (`id`, `asset_id`, `menutype`, `title`, `description`) VALUES
-	(1, 0, 'mainmenu', 'Main Menu', 'The main menu for the site');
+	(1, 0, 'mainmenu', 'Main Menu', 'The main menu for the site'),
+	(2, 0, 'hidden', 'Hidden', '');
 /*!40000 ALTER TABLE `virgin_menu_types` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

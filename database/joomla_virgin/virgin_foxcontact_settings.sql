@@ -11,12 +11,11 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping data for table joomla_virgin.virgin_template_styles: ~3 rows (approximately)
-/*!40000 ALTER TABLE `virgin_template_styles` DISABLE KEYS */;
-INSERT INTO `virgin_template_styles` (`id`, `template`, `client_id`, `home`, `title`, `params`) VALUES
-	(8, 'isis', 1, '1', 'isis - Default', '{"templateColor":"","logoFile":""}'),
-	(9, 'starlink', 0, '1', 'StarLink - Default', '{"googleFont":"1","googleFontNameHeadings":"Roboto","googleFontNameBody":"Roboto","mainPhone":"377-090","mainPhoneCityCode":"044","mainPhoneCountryCode":"","assetsBasePath":"\\/media\\/mod_starlink"}');
-/*!40000 ALTER TABLE `virgin_template_styles` ENABLE KEYS */;
+-- Dumping data for table joomla_virgin.virgin_foxcontact_settings: ~1 rows (approximately)
+/*!40000 ALTER TABLE `virgin_foxcontact_settings` DISABLE KEYS */;
+INSERT INTO `virgin_foxcontact_settings` (`name`, `value`) VALUES
+	('captchadrawer', 'use_gd');
+/*!40000 ALTER TABLE `virgin_foxcontact_settings` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;

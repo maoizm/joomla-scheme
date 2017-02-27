@@ -14,7 +14,7 @@
 -- Dumping data for table joomla_virgin.virgin_user_usergroup_map: ~1 rows (approximately)
 /*!40000 ALTER TABLE `virgin_user_usergroup_map` DISABLE KEYS */;
 INSERT INTO `virgin_user_usergroup_map` (`user_id`, `group_id`) VALUES
-	(193, 8);
+	(561, 8);
 /*!40000 ALTER TABLE `virgin_user_usergroup_map` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

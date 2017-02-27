@@ -14,7 +14,7 @@
 -- Dumping data for table joomla_virgin.virgin_users: ~1 rows (approximately)
 /*!40000 ALTER TABLE `virgin_users` DISABLE KEYS */;
 INSERT INTO `virgin_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`, `requireReset`) VALUES
-	(193, 'Super User', 'starlink', 'ma0@outlook.com', '$2y$10$rVBRjF1JR5PIWmlHIpi/xuIZpMugrRbnIjV3E/FNA.Nc7zaPVWMr2', 0, 1, '2017-02-26 04:07:42', '2017-02-26 05:15:45', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
+	(561, 'Super User', 'starlink', 'admin@starlink.ua', '$2y$10$AsLBqEsAsHPFT08uK1/TD.g6j5QdVeyrvMXQ5SByOzSvF56WCg/TK', 0, 1, '2016-06-24 07:47:29', '2017-02-15 13:39:15', '0', '', '0000-00-00 00:00:00', 0, '', '', 0);
 /*!40000 ALTER TABLE `virgin_users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

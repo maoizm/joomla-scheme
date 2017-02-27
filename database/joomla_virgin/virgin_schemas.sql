@@ -11,10 +11,12 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping data for table joomla_virgin.virgin_schemas: ~1 rows (approximately)
+-- Dumping data for table joomla_virgin.virgin_schemas: ~3 rows (approximately)
 /*!40000 ALTER TABLE `virgin_schemas` DISABLE KEYS */;
 INSERT INTO `virgin_schemas` (`extension_id`, `version_id`) VALUES
-	(700, '3.6.3-2016-08-16');
+	(700, '3.6.3-2016-08-16'),
+	(10004, '2.0'),
+	(10006, '3.6.3');
 /*!40000 ALTER TABLE `virgin_schemas` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

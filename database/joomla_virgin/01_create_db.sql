@@ -319,6 +319,26 @@ CREATE TABLE IF NOT EXISTS `virgin_core_log_searches` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Data exporting was unselected.
+-- Dumping structure for table joomla_virgin.virgin_djimageslider
+CREATE TABLE IF NOT EXISTS `virgin_djimageslider` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `catid` int(10) unsigned NOT NULL DEFAULT '0',
+  `title` varchar(255) NOT NULL,
+  `alias` varchar(255) NOT NULL DEFAULT '',
+  `image` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `published` tinyint(1) NOT NULL DEFAULT '0',
+  `publish_up` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `publish_down` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `checked_out` int(10) unsigned NOT NULL DEFAULT '0',
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `ordering` int(11) NOT NULL DEFAULT '0',
+  `params` text NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `catid` (`catid`,`published`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Data exporting was unselected.
 -- Dumping structure for table joomla_virgin.virgin_extensions
 CREATE TABLE IF NOT EXISTS `virgin_extensions` (
   `extension_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -667,6 +687,46 @@ CREATE TABLE IF NOT EXISTS `virgin_finder_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `title` (`title`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Data exporting was unselected.
+-- Dumping structure for table joomla_virgin.virgin_foxcontact_captcha
+CREATE TABLE IF NOT EXISTS `virgin_foxcontact_captcha` (
+  `session_id` varchar(200) NOT NULL,
+  `form_uid` varchar(16) NOT NULL,
+  `date` int(11) NOT NULL,
+  `answer` varchar(64) NOT NULL,
+  PRIMARY KEY (`session_id`,`form_uid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Data exporting was unselected.
+-- Dumping structure for table joomla_virgin.virgin_foxcontact_enquiries
+CREATE TABLE IF NOT EXISTS `virgin_foxcontact_enquiries` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `form_id` int(11) NOT NULL,
+  `date` date NOT NULL,
+  `exported` tinyint(4) NOT NULL DEFAULT '0',
+  `ip` varchar(15) NOT NULL,
+  `url` text NOT NULL,
+  `fields` mediumtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idx_time` (`date`)
+) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Data exporting was unselected.
+-- Dumping structure for table joomla_virgin.virgin_foxcontact_sequences
+CREATE TABLE IF NOT EXISTS `virgin_foxcontact_sequences` (
+  `series` varchar(32) NOT NULL,
+  `value` int(11) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`series`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- Data exporting was unselected.
+-- Dumping structure for table joomla_virgin.virgin_foxcontact_settings
+CREATE TABLE IF NOT EXISTS `virgin_foxcontact_settings` (
+  `name` varchar(32) NOT NULL,
+  `value` text NOT NULL,
+  PRIMARY KEY (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Data exporting was unselected.
 -- Dumping structure for table joomla_virgin.virgin_languages
@@ -1210,6 +1270,7 @@ CREATE TABLE IF NOT EXISTS `virgin_viewlevels` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `idx_assetgroup_title_lookup` (`title`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 
 -- Data exporting was unselected.
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
