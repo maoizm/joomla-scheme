@@ -217,7 +217,7 @@ INSERT INTO `virgin_modules_menu` (`moduleid`, `menuid`) VALUES
 	(163, 108),
 	(164, 109),
 	(165, 110),
-	/* (176, 101),
+	(176, 101),
 	(176, 106),
 	(177, 115),
 	(177, 126),
@@ -251,7 +251,7 @@ INSERT INTO `virgin_modules_menu` (`moduleid`, `menuid`) VALUES
 	(178, 136),
 	(178, 137),
 	(178, 138),
-	(179, 165), */
+	(179, 165),
 	(180, 165),
 	(183, 101),
 	(184, 101),
@@ -263,7 +263,7 @@ INSERT INTO `virgin_modules_menu` (`moduleid`, `menuid`) VALUES
 	(184, 111),
 	(184, 114),
 	(184, 115),
-	/*(185, 101),
+	(185, 101),
 	(185, 105),
 	(185, 107),
 	(185, 108),
@@ -273,7 +273,7 @@ INSERT INTO `virgin_modules_menu` (`moduleid`, `menuid`) VALUES
 	(185, 114),
 	(185, 115),
 	(186, 101),
-	(186, 106) */;
+	(186, 106);
 /*!40000 ALTER TABLE `virgin_modules_menu` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
