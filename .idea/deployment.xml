@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" compareModeInSync="TIMESTAMP" showExcludedInSync="true">
+  <component name="PublishConfigData" serverName="starlink.dev">
     <serverData>
       <paths name="joomla_virgin">
         <serverdata>
           <mappings>
             <mapping deploy="\" local="$PROJECT_DIR$/site" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path=".dist" />
+          </excludedPaths>
         </serverdata>
       </paths>
       <paths name="starlink.dev">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="\" local="$PROJECT_DIR$/site-work" web="/" />
           </mappings>
+          <excludedPaths>
+            <excludedPath path=".dist" />
+            <excludedPath path=".git" />
+            <excludedPath path=".gulp" />
+            <excludedPath path=".idea" />
+            <excludedPath path=".src" />
+            <excludedPath path=".test" />
+            <excludedPath path="0-joomla-virgin" />
+            <excludedPath path="node_modules" />
+            <excludedPath path="configuration.php" />
+            <excludedPath path="config.gulp.js" />
+            <excludedPath path="gulpfile.js" />
+            <excludedPath path=".gitignore" />
+            <excludedPath path=".editorconfig" />
+            <excludedPath path=".index.js" />
+            <excludedPath path="package.json" />
+            <excludedPath path="index.js" />
+            <excludedPath path="files.txt" />
+            <excludedPath path="package.json" />
+            <excludedPath path="yarn.lock" />
+            <excludedPath path=".htaccess" />
+            <excludedPath path="htaccess.txt" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
